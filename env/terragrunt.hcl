@@ -6,6 +6,6 @@ remote_state {
     project  = "Newproject"
     location = "us"
     bucket   = "asax-storage-bucket"
-    prefix   = "${basename(get_parent_terragrunt_dir())}/${path_relative_to_include()}"
+    prefix   = "${basename(get_parent_terragrunt_dir())}/${path_relative_to_include()}/terraform.tfstate"
   }
 }
